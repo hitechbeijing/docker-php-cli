@@ -15,5 +15,6 @@ RUN apt-get update && apt-get install -y \
     && pecl install swoole \
     && pecl install amqp \
     && pecl install mcrypt \
-    && docker-php-ext-enable redis swoole amqp mcrypt
+    && docker-php-ext-enable redis swoole amqp mcrypt \
+    && mkdir -p /usr/share/php/cli
 
